@@ -4,7 +4,8 @@
   "description": "Run markuplint against snapshots",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "biome check .",
+    "format": "biome format --write ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/apple-yagi/markuplint-snapshots-test#readme",
   "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
     "markuplint": "^4.0.3"
   }
 }
